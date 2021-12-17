@@ -19,8 +19,6 @@ private func fibonacci(between: (Int, Int)) {
     }
 }
 
-fibonacci(between: (750, 1000))
-
 ///Return Fibonacci numbers from between parameter
 /// - Parameters:
 /// - between: What range should it be.
@@ -35,6 +33,8 @@ private func fibonacciHighOrderSolution(between: (Int, Int)) -> [Int] {
 
     return fibonacciArray.filter({ $0 > between.0 && $0 < between.1 })
 }
+
+fibonacci(between: (750, 1000))
 print(fibonacciHighOrderSolution(between: (750, 1000)))
 
 //Develop Bug fix
